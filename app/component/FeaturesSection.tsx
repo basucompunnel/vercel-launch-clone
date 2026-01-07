@@ -94,7 +94,7 @@ function FeaturesGrid() {
 
 export default function FeaturesSection() {
   return (
-    <section className="py-16 md:py-24 px-4 bg-white relative">
+    <section className="py-16 md:py-24 px-4 bg-[#FAFAFA] relative">
       <div className="max-w-5xl mx-auto">
         <FeaturesGrid />
       </div>

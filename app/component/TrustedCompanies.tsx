@@ -99,7 +99,7 @@ function LogoCarousel() {
 
 export default function TrustedCompanies() {
   return (
-    <section className="py-16 md:py-24 px-4 bg-white">
+    <section className="py-16 md:py-24 px-4 bg-[#FAFAFA]">
       <div className="max-w-5xl mx-auto">
         <CompaniesHeading />
         <LogoCarousel />

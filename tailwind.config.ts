@@ -9,7 +9,7 @@ const config: Config = {
     extend: {
       colors: {
         background: "#000000",
-        foreground: "#ffffff",
+        foreground: "#FAFAFA",
         muted: "#888888",
       },
       fontSize: {
