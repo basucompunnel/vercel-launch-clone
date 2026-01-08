@@ -1,33 +1,34 @@
 import Image from "next/image";
+import { getAssetPath } from "@/lib/utils";
 
 const logos = [
   {
     name: "Unity",
-    src: "/assets/images/unity-logo.svg",
+    src: getAssetPath("/assets/images/unity-logo.svg"),
     width: 120,
     height: 40,
   },
   {
     name: "The Washington Post",
-    src: "/assets/images/the-washington-post-logo-5.png",
+    src: getAssetPath("/assets/images/the-washington-post-logo-5.png"),
     width: 180,
     height: 20,
   },
   {
     name: "Wayfair",
-    src: "/assets/images/wayfair-logo.svg",
+    src: getAssetPath("/assets/images/wayfair-logo.svg"),
     width: 140,
     height: 40,
   },
   {
     name: "Under Armour",
-    src: "/assets/images/under-armour-logo-2.png",
+    src: getAssetPath("/assets/images/under-armour-logo-2.png"),
     width: 140,
     height: 40,
   },
   {
     name: "Stripe",
-    src: "/assets/images/stripe-logo.png",
+    src: getAssetPath("/assets/images/stripe-logo.png"),
     width: 100,
     height: 40,
   },

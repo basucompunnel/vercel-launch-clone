@@ -2,6 +2,7 @@ import { HiOutlineCube, HiOutlineClock, HiOutlineServer } from "react-icons/hi";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { getAssetPath } from "@/lib/utils";
 
 function GridBorders() {
   return (
@@ -113,22 +114,22 @@ function BrowserMockup({ selectedFeature }: { selectedFeature: number }) {
                     {
                       name: "Hoodie",
                       price: "$45",
-                      image: "/assets/images/partial-prerendering-1.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-1.avif"),
                     },
                     {
                       name: "Cap",
                       price: "$30",
-                      image: "/assets/images/partial-prerendering-2.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-2.avif"),
                     },
                     {
                       name: "Mug",
                       price: "$15",
-                      image: "/assets/images/partial-prerendering-3.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-3.avif"),
                     },
                     {
                       name: "T-Shirt",
                       price: "$20",
-                      image: "/assets/images/partial-prerendering-4.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-4.avif"),
                     },
                   ].map((product, idx) => (
                     <div
@@ -234,22 +235,22 @@ function BrowserMockup({ selectedFeature }: { selectedFeature: number }) {
                     {
                       name: "Hoodie",
                       price: "$45",
-                      image: "/assets/images/partial-prerendering-1.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-1.avif"),
                     },
                     {
                       name: "Cap",
                       price: "$30",
-                      image: "/assets/images/partial-prerendering-2.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-2.avif"),
                     },
                     {
                       name: "Mug",
                       price: "$15",
-                      image: "/assets/images/partial-prerendering-3.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-3.avif"),
                     },
                     {
                       name: "T-Shirt",
                       price: "$20",
-                      image: "/assets/images/partial-prerendering-4.avif",
+                      image: getAssetPath("/assets/images/partial-prerendering-4.avif"),
                     },
                   ].map((product, idx) => (
                     <div

@@ -3,6 +3,7 @@ import { HiChartBar, HiLightningBolt, HiRefresh, HiCog, HiDocumentText, HiGlobe,
 import { MdRocket } from "react-icons/md";
 import BlackButton from "./common/BlackButton";
 import WhiteButton from "./common/WhiteButton";
+import { getAssetPath } from "@/lib/utils";
 
 function FeaturesGrid() {
   const features = [
@@ -107,7 +108,7 @@ export default function SupportSection() {
               {/* Infinity/Figure-8 Background */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[170px]">
                 <img
-                  src="/assets/images/ellipsed-background.svg"
+                  src={getAssetPath("/assets/images/ellipsed-background.svg")}
                   alt=""
                   className="w-full h-full object-contain"
                 />

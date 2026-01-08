@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getAssetPath } from "@/lib/utils";
 import { SiVercel } from "react-icons/si";
 
 function GridBackground() {
@@ -25,7 +26,7 @@ function HeroLogo() {
   return (
     <div className="mb-8 md:mb-12 flex justify-center">
       <Image
-        src="/assets/images/next-logo.svg"
+        src={getAssetPath("/assets/images/next-logo.svg")}
         alt="Next.js Logo"
         width={80}
         height={80}

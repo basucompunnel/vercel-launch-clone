@@ -1,5 +1,6 @@
 import { HiUser, HiLockClosed, HiShieldCheck, HiArrowRight } from "react-icons/hi";
 import { SiNextdotjs, SiVercel } from "react-icons/si";
+import { getAssetPath } from "@/lib/utils";
 
 function SecurityCard() {
   return (
@@ -180,7 +181,7 @@ export default function EnterpriseSection() {
         {/* Testimonials Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-0">
           <TestimonialCard
-            logo="/assets/images/hashicorp-logo.svg"
+            logo={getAssetPath("/assets/images/hashicorp-logo.svg")}
             logoAlt="HashiCorp"
             beforeHighlight="On-demand ISR speeds up the iteration process across the board"
             highlightText="for all of our sites"
@@ -189,7 +190,7 @@ export default function EnterpriseSection() {
             authorTitle="Senior Web Engineer"
           />
           <TestimonialCard
-            logo="/assets/images/sonos-logo.svg"
+            logo={getAssetPath("/assets/images/sonos-logo.svg")}
             logoAlt="Sonos"
             beforeHighlight="It's just a pity we didn't go sooner. Next.js and Vercel make our developers happier, make us"
             highlightText="go to market quicker"
